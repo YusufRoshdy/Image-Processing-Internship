@@ -1,4 +1,33 @@
-# Internship
+# Augmentation: Fog generation
+
+after trying diffrent libararies, I found the best one that works is the wither libarary from imgaug.
+I scan the the input using cv2.imread()
+
+```python
+imgs = []
+for i in inputs:
+    image = cv2.imread(i)
+    if image is not 'None':
+        imgs.append(image)
+```
+then looping on the images to augment them by calling fog_augmentation1()
+```python
+i = 0
+while i < len(imgs):
+    cv2.imwrite(outputs[i], fog_augmentation1(imgs[i]))
+    i = i+1
+```
+in the function fog_augmentation1() it takes a parameter img and return it after adding the fog using iaa.Sequential(iaa.Fog(random_state=9)) and after trying different values for random_stat the best one that worked is 9
+```python
+def fog_augmentation1(img):
+    seq = iaa.Sequential(iaa.Fog(random_state=9))
+    img = seq.augment_image(img)
+    seq = iaa.Sequential(iaa.MotionBlur())
+    img = seq.augment_image(img)
+    return img
+```
+
+The results are shown below
 
 <img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155785-62f59080-5fc4-11e9-921d-688d8597e098.jpg">
 <img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155786-62f59080-5fc4-11e9-990e-302dfdb47c2d.jpg">
