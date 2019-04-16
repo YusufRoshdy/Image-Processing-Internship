@@ -40,7 +40,7 @@ The results are shown below:
 <img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155735-45282b80-5fc4-11e9-8549-fe8de51af8fe.jpg">
 <img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155727-43f6fe80-5fc4-11e9-83c8-eea2bcb160e9.jpg">
 <img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155729-43f6fe80-5fc4-11e9-883f-f911996b8108.jpg">
-<img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155730-43f6fe80-5fc4-11e9-8ac0-133c76767508.jpg">
+<img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155730-43f6fe80-5fc4-11e9-8ac0-133c76767508.jpg"><br />
 
 
 # Makeup: Facial keypoints detection & drawing
