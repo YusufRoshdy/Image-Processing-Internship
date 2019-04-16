@@ -42,6 +42,7 @@ The results are shown below:
 <img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155729-43f6fe80-5fc4-11e9-883f-f911996b8108.jpg">
 <img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155730-43f6fe80-5fc4-11e9-8ac0-133c76767508.jpg"><br />
 
+<br />  
 
 # Makeup: Facial keypoints detection & drawing
 I wrote a code that add two stars and a moustache on the face, by using the pre-trained facial landmark detector inside the dlib library is used to estimate the location of 68 (x, y)-coordinates that map to facial structures on the face.
