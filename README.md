@@ -27,7 +27,7 @@ def fog_augmentation1(img):
     return img
 ```
 
-The results are shown below
+The results are shown below:
 
 <img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155785-62f59080-5fc4-11e9-921d-688d8597e098.jpg">
 <img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155786-62f59080-5fc4-11e9-990e-302dfdb47c2d.jpg">
@@ -41,3 +41,28 @@ The results are shown below
 <img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155727-43f6fe80-5fc4-11e9-83c8-eea2bcb160e9.jpg">
 <img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155729-43f6fe80-5fc4-11e9-883f-f911996b8108.jpg">
 <img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56155730-43f6fe80-5fc4-11e9-8ac0-133c76767508.jpg">
+
+
+# Makeup: Facial keypoints detection & drawing
+I wrote a code that add two stars and a moustache on the face, by using the pre-trained facial landmark detector inside the dlib library is used to estimate the location of 68 (x, y)-coordinates that map to facial structures on the face.
+
+The indexes of the 68 coordinates can be visualized on the image below:
+<img src="https://user-images.githubusercontent.com/24385400/56217881-a1df2100-606c-11e9-9e50-964274dc5fa2.jpg"><br />
+
+with the above points we can calculate the angle and position of the stars and the moustache  
+and by using a formula to overlay them on the face without the background
+
+and the result are shown below:
+
+<img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56219466-790c5b00-606f-11e9-8c23-2b04291a3883.jpg">
+<img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56219467-790c5b00-606f-11e9-82c2-46a04edb280d.jpg">
+<img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56219468-79a4f180-606f-11e9-8f6d-715c197db472.jpg">
+<img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56219469-79a4f180-606f-11e9-96f9-f7a37248c525.jpg">
+<img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56219470-79a4f180-606f-11e9-8bf8-a13a0691d785.jpg">
+
+
+<img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56219471-79a4f180-606f-11e9-8700-7765c2542d82.jpg">
+<img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56219472-7a3d8800-606f-11e9-9e6f-157228d3bb12.jpg">
+<img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56219474-7a3d8800-606f-11e9-9ed4-c65e6bcc1d39.jpg">
+<img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56219475-7a3d8800-606f-11e9-961c-b20b36cf7744.jpg">
+<img align="left" width="150" height="100" src="https://user-images.githubusercontent.com/24385400/56219476-7a3d8800-606f-11e9-9de5-dd724fda8de4.jpg">
