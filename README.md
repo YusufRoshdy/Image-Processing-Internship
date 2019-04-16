@@ -49,8 +49,19 @@ I wrote a code that add two stars and a moustache on the face, by using the pre-
 The indexes of the 68 coordinates can be visualized on the image below:
 <img src="https://user-images.githubusercontent.com/24385400/56217881-a1df2100-606c-11e9-9e50-964274dc5fa2.jpg"><br />
 
-with the above points we can calculate the angle and position of the stars and the moustache  
+with the above points we can calculate the size, angle and position of the stars and the moustache  
+```python
+def overlay(x1, y1, x2, y2, src, mask):
+    dy = y2 - y1
+    dx = x2 - x1
+    angle = np.math.atan2(dy, dx) * 180 / np.math.pi
+    mask = imutils.rotate_bound(mask, int(angle / 2))
+```
 and by using a formula to overlay them on the face without the background
+```python
+    for c in range(0, 3):
+        src[y1:y2, x1:x2, c] = (alpha_s * mask[:, :, c] + alpha_l * src[y1:y2, x1:x2, c])
+```
 
 and the result are shown below:
 
